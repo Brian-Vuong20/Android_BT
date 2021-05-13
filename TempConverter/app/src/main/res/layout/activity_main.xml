@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tempConverter.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:layout_marginBottom="36dp"
+        android:text="Temperature Converter"
+        app:layout_constraintBottom_toTopOf="@+id/degC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/degC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:ems="10"
+
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/degF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Enter_c"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/degF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="47dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/C_Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/degC"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/Enter_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="29dp"
+        android:text="C to F"
+        app:layout_constraintBottom_toBottomOf="@+id/degC"
+        app:layout_constraintEnd_toStartOf="@+id/degC"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/degC"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="29dp"
+        android:text="F to C"
+        app:layout_constraintEnd_toStartOf="@+id/degF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Enter_c"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/C_Button"
+        android:layout_width="161dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="22dp"
+
+        android:text="C to F"
+        app:layout_constraintBottom_toTopOf="@+id/F_Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/degF"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/F_Button"
+        android:layout_width="161dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="29dp"
+        android:text="F TO C"
+        app:layout_constraintBottom_toTopOf="@+id/clear_Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/C_Button"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/clear_Button"
+        android:layout_width="161dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="209dp"
+        android:text="CLEAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/F_Button"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
